@@ -15,7 +15,7 @@ class anasayfa extends CI_Controller {
 	public function index()
 	{
 		//$this->output->cache(10);
-		$this->load->model('auto_model');
+		$this->load->model('our_team_model');
 
 		$twig_debug_mode = true;
 		$this->load->library('twig',$twig_debug_mode);
@@ -27,7 +27,7 @@ class anasayfa extends CI_Controller {
     									 )
 					);	*/
 		
-		$this->parser_data['all_auto'] = $this->auto_model->readRow();
+		$this->parser_data['all_auto'] = $this->our_team_model->readRow();
 		//$this->twig->enableTwigDebug();
 		$this->parser_data['nm'] = "var_name";
 		$this->twig->display('view.html',$this->parser_data);

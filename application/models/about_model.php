@@ -8,6 +8,7 @@ class about_model extends CI_Model {
 		if($query->num_rows()>0)
 		{
 			$row_array = array ('about_text_detail'	=> $query->row()->about_text_detail,
+								'about_text_detail_eng' => $query->row()->about_text_detail_eng
 							   );
 			return $row_array;
 		}
@@ -34,9 +35,10 @@ class about_model extends CI_Model {
 	}
 	
 	
-	public function updateAboutUs($about_text_detail)
+	public function updateAboutUs($about_text_detail, $about_text_detail_eng)
 	{
-		$data = array(	'about_text_detail'	=> $about_text_detail
+		$data = array(	'about_text_detail'		=> $about_text_detail,
+						'about_text_detail_eng' => $about_text_detail_eng
 					 );
 					  
 		$query = $this->db->where('id',1);

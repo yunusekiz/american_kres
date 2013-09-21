@@ -128,6 +128,20 @@
 		);*/
 	});
 	</script>
-<!--/ DatePicker BootStrap  -->	
+<!--/ DatePicker BootStrap  -->
+  <!-- include libraries BS3 -->
+<!--   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" />
+  <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" /> -->
+
+  <!-- include summernote -->
+<!--   <link rel="stylesheet/less" type="text/css" href="{base}assets/backend_assets/summernote/summernote.less" /> 
+  <script type="text/javascript" src="{base}assets/backend_assets/summernote/summernote.js"></script>
+ -->
+  <script type="text/javascript">
+/*    $(document).ready(function() {
+      $('.summernote').summernote({height: 300, focus: true, tabsize: 2});
+    });*/
+  </script>	
 </head>
 <body>

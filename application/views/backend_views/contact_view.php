@@ -27,6 +27,11 @@
 								</p>
 								
 								</br>
+
+								<p>
+									<label> Faks  </label>
+									<input class="text-input large-input" type="text" style="color:black" id="large-input" name="fax_field" value="{fax}" />
+								</p>		
 							
 								</br>
 								<p>
@@ -35,6 +40,11 @@
 								</p>
       
 								</br>
+								<p>
+									<label> Address (English version of address) </label>
+									<input class="text-input large-input" type="text" style="color:black" id="large-input" name="address_field_end" value="{address_eng}" />
+								</p>
+
 								<p>
 									<input class="button" type="submit" value="Kaydet" />
 								</p>

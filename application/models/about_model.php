@@ -18,21 +18,23 @@ class about_model extends CI_Model {
 		}
  	}
 	
-	
-	
 	public function getAboutUsRow()
 	{
 		$query = $this->db->select('*')->from('about_us')->where('id',1)->get();
 		if($query->num_rows()>0)
-		{
-			$result = $query->result_array();
-			return $result;				 						
-		}
+			return $query->result_array();
 		else
-		{
 			return FALSE;
-		}
 	}
+
+	public function readRow()
+	{
+		$query = $this->db->select('*')->from('about_us')->where('id',1)->get();
+		if($query->num_rows()>0)
+			return $query->result_array();
+		else
+			return FALSE;
+	}	
 	
 	
 	public function updateAboutUs($about_text_detail, $about_text_detail_eng)

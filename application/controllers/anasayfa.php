@@ -9,29 +9,40 @@ class anasayfa extends CI_Controller {
 		parent::__construct();
 		
 		$this->parser_data['base'] = base_url();
-		//$this->parser_data['title'] = 'Anasayfa';
+		$this->parser_data['title'] = 'Anasayfa - American Fine Arts and Drama Anaokulları';
 	}	
 
 	public function index()
 	{
-		//$this->output->cache(10);
-		$this->load->model('our_team_model');
+		$this->news();
+		$this->lists();
+		$this->acty();
+		$this->slider();
+		$this->parser->parse('frontend_views/anasayfa_view',$this->parser_data);
+	}
 
-		$twig_debug_mode = true;
-		$this->load->library('twig',$twig_debug_mode);
-		//$data['title'] = "Testing Twig!!";
-/*		$data = array(
-    					'topics' => array(
-        									'topic1' => array('Message 1 of topic 1', 'Message 2 of topic 1'),
-        									'topic2' => array('Message 1 of topic 2', 'Message 2 of topic 2'),
-    									 )
-					);	*/
-		
-		$this->parser_data['all_auto'] = $this->our_team_model->readRow();
-		//$this->twig->enableTwigDebug();
-		$this->parser_data['nm'] = "var_name";
-		$this->twig->display('view.html',$this->parser_data);
+	protected function news()
+	{
+		$this->load->model('news_model');
+		$this->parser_data['news_iteration'] = $this->news_model->readRow(null,1);
+	}
 
+	protected function slider()
+	{
+		$this->load->model('slider_model');
+		$this->parser_data['slider_iteration'] = $this->slider_model->readRow();
+	}
+
+	protected function lists()
+	{
+		$this->load->model('list_model');
+		$this->parser_data['lists_iteration'] = $this->list_model->readRow(null,5);
+	}
+
+	protected function acty()
+	{
+		$this->load->model('acty_model');
+		$this->parser_data['activity_iteration'] = $this->acty_model->readRow(null,1);
 	}
 
 }

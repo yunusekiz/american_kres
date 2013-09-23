@@ -1,183 +1,208 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta charset="utf-8">
-    <title>{title}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="American Fine Arts">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<link href='http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Nunito:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- Le styles -->
-    <link href="{base}css/bootstrap.min.css" rel="stylesheet">
-    <link href="{base}css/font-awesome.min.css" rel="stylesheet">
-    <link href="{base}css/prettyPhoto.css" rel="stylesheet">
-    <link href="{base}css/jquery.bxslider.css" rel="stylesheet">
-    <link href="{base}css/style.css" rel="stylesheet">
-    <link class="style" href="{base}css/style-default.css" rel="stylesheet">
-    <link href="{base}css/swicther.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<link href="style.css" media="screen" rel="stylesheet">
+<link href="screen.css" media="screen" rel="stylesheet">
+<!-- custom CSS -->
+<link href="custom.css" media="screen" rel="stylesheet">
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/respond.min.js"></script>					 
+<script src="js/libs/jquery.min.js"></script>
+<!-- scripts  -->
+<script src="js/jquery.spritely.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/hoverIntent.js"></script>
+<!-- custom input -->
+<script src="js/jquery.customInput.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<!-- gMap -->
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/jquery.gmap.min.js"></script>
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="images/favicon.png"><!--favicon image-->
-  </head>
+</head>
 
-  <body>
-
-<!--   <div id="style-menu">
-      <div class="switch-btn"><i class="icon-cog"></i></div>
-      <ul class="clearfix">
-        <li class="switch-title">Choose Color</li>
-        <li><a class="orange" href="#" data-rel="css/style-default.css"></a></li>
-        <li><a class="red" href="#" data-rel="css/style-red.css"></a></li>
-        <li><a class="blue" href="#" data-rel="css/style-blue.css"></a></li>
-        <li><a class="green" href="#" data-rel="css/style-green.css"></a></li>
-        <li><a class="purple" href="#" data-rel="css/style-purple.css"></a></li>
-        <li><a class="yellow" href="#" data-rel="css/style-yellow.css"></a></li>
-      </ul>
-  </div> -->
-  
-<section class="wrapper clearfix">
-    <section id="header" class="clearfix">
-        <div class="container menu">
-            <div class="center clearfix">
-                    <ul class="navigation clearfix">
-                        <li><a href="{base}">Anasayfa<span class="navi-line"></span></a></li>
-                        <li><a href="{base}hakkimizda">HAKKIMIZDA<span class="navi-line"></span></a></li>
-                        <li>
-                            <a href="{base}araclar">KİRALIK ARAÇLAR<span class="navi-line"></span></a>
-                        </li>
-                        <li>
-                            <a href="{base}referanslar">Referanslar<span class="navi-line"></span></a>
-                        </li>
-                        <li><a href="{base}iletisim">İLETİŞİM<span class="navi-line paged"></span></a></li>
-                    </ul><!--/.navigation-->  
-            </div><!--/.center-->  
-        </div><!--/.menu-->
-
-    </section><!--/header-->
-    <section class="grey clearfix">
-        <div class="motto container">
-            <a class="logo" href="{base}"><img src="{base}images/logo.png" alt="logo"></a>
-            <!-- <p class="logo-text">Arac K&#304;ralama</p> -->
-        </div><!--/.motto-->
-    </section><!--/.gray-->
-
-    <section class="content clearfix">  
-        <div class="content-inner container">
-             <h3 class="big-text" style="font-family:arial; font-weight:bold;">İLETİŞİM</h3>  
-            <div id="map_canvas" class="content-inner clearfix"></div><!--GOOGLE MAP HERE-->
+<body>
+<div class="body_wrap">
+	
+  <!-- header -->
+  <div class="header">
+      <div class="container">
+      
+      	  <div class="sunbeam"></div>
+          <div class="rocket"></div>
+          
+          <div class="logo">
+              <a href="{base}"><img src="images/logo.png" alt=""></a>
+          </div>
+          
+          <!-- topmenu -->    
+          <nav id="topmenu" class="clearfix">   
+            <div class="topmenu_inner">  
+              <ul class="dropdown">    
+                                                                           
+                  <li class="menu-level-0"><a href=""><span>Biz Kimiz ? </span></a>
+                      <ul class="submenu-1">                          
+                          <li class="menu-level-1"><a href="{base}hakkimizda"><span>Hakkımızda</span></a></li>
+                          <li class="menu-level-1"><a href="{base}yonetim_kadromuz"><span>Yönetim Kadromuz </span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="#"><span>Eğitim Sistemimiz</span></a>
+                      <ul class="submenu-1">                            
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/9/resim"><span>Resim</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a></li>                                                       
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale, &nbsp;&nbsp; Ritmik dans, Stretching</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="{base}galeri"><span>Galeri</span></a></li>
+                  <li class="menu-level-0"><a href="{base}iletisim"><span>İletişim</span></a></li>                                
+              </ul>  
+              </div>
+          </nav>    
+        <!--/ topmenu -->
+          
+          <div id="top_kite"></div>
+      </div>   
+  </div>
+  <div id="top_clouds" class="top_stage"></div>
+  <!--/ header -->
+		
+<!-- middle -->
+<div id="middle" class="full_width">
+	<div class="container clearfix">
+    	
+        <div id="mid_bird"></div>
+        <div id="mid_baloon"></div>
+    	
+        <div class="content_wrapper">   
+        	
+            <div class="title_top">
+            	<h1>İletişim</h1>
+            </div>
             
-            <div class="title-box clearfix">
-                <i class="icon-cogs"></i>
-                <h3 class="title-content" style="font-family:arial; font-weight:bold;">İLETİŞİM ADRESLERİMİZ</h3>
-                <p class="mini-text">Sizi ofisimize bekliyoruz</p>
-            </div><!--/.title-box-->
-            
-            <div class="row">
-                <div class="span6 content-inner">
-<!--                     <p>An alteration of the timeline for the superhero, The Flash, creates ripples alters the Universe. The Flash must team with other heroes to restore the 
-                    timeline while the Earth is ravaged by a war between Aquaman’s Atlantis and Wonder Woman.</p> -->
-                    <div class="spacing-20 clearfix"></div>
-                    <ul class="address-content clearfix">
-                        {contact_iteration}
-                        <li><i class="icon-home"></i> <span>Adres:</span> {address}</li>
-                        <li><i class="icon-phone"></i><span>Telefon:</span>{phone}</li>
-                        <!-- <li><i class="icon-envelope"></i> <span>Eposta:</span> <a href="{email}"> {email}</a></li> -->
-                        {/contact_iteration}
-                    </ul>
-                    
-                </div><!--/.content-inner-->
+	        <!-- content -->
+	        <div class="content">
+            	
+                <!-- contact form -->
+                <div class="box_sprite">
+                	<div class="box_sprite_inner clearfix">
+                    	
+                        <div class="col_left">                        	
+                        	<!-- contact form -->
+                            <div class="contact_form">
+			                <form action="iletisim/mesaj" method="post" id="contactForm">		                    
+			                    <div class="row field_text field_name">	                        
+			                        <input type="text" name="name" value="" class="inputtext input_middle required" placeholder="İsim,Soyisim" required>
+			                    </div>
+			                    <div class="clear"></div>                                
+			                    <div class="row field_text field_email">
+			                        <input type="text" name="email" value="" class="inputtext input_middle required" placeholder="E-posta" required>
+			                    </div>		                    
+			                    <div class="clear"></div>  
+			                    <div class="row field_message">
+			                        <textarea cols="30" rows="10" name="message" class="textarea textarea_middle required" placeholder="Mesaj..." required></textarea>
+			                    </div>
+			                    
+			                    <div class="row rowSubmit clearfix">
+			                        <input type="submit" value="Gönder" class="btn-submit">
+			                    </div>
+			                </form>
+                            </div>
+                            <!--/ contact form -->
+                        </div>
+                        
+                        <div class="col_right">
+                        	<h2>irtibat bilgilerimiz</h2>
+                            <div class="subtitle">American Fine Arts and Drama Anaokulları</div>
+                            
+                            <div class="contact_info">
+                              {contact_iteration}
+								<div class="row address">{address}</div>						
+		                        <div class="row phone"><em>Telefon:</em> <span> {phone} </span></div>
+		                        <div class="row fax"><em>Faks:</em> <span> {fax} </span></div>
+                                <!-- <div class="row mail"><em>E-Posta:</em> <a href="mailto:contact@company.com">contact@company.com</a></div> -->
+							               {/contact_iteration}
+                           </div>
+                            
+                        </div>
+                    </div>
+	            </div>
+  				<!--/ contact form -->
                 
-                <div class="span6 content-inner">
-                    <div id="form-wrapper">
-                                <div id="form-inner">
-                                    <div id="ErrResults"><!-- retrive Error Here --></div>
-                                    <div id="MainResult"><!-- retrive response Here --></div>
-                                    <div id="MainContent">
-                                        <form id="MyContactForm" name="MyContactForm" method="post">
-                                            <p class="name"><span>İsim:</span> 
-                                            <input type="text" name="name" id="name" placeholder="İsminiz ...">
-                                            <label for="name" id="nameLb"><span class="error">*Lütfen boş bırakmayın</span></label>
-                                            </p>
-                                            <p><span>Eposta:</span> 
-                                            <input type="email" name="email" id="email" placeholder="Eposta adresiniz ...">
-                                            <label for="email" id="emailLb"><span class="error">*Lütfen boş bırakmayın</span></label>
-                                            </p>
-<!--                                             <p><span>Phone:</span> 
-                                            <input type="text" name="phone" id="phone" placeholder="Your Telephone ...">
-                                            <label for="phone" id="phoneLb"><span class="error">*Telephone Field Required</span></label>
-                                            </p> -->
-                                            <p class="textarea"><span>Mesaj:</span>  
-                                            <textarea name="message" id="message" placeholder="Mesajınız ..." rows="3"></textarea>
-                                            <label for="message" id="messageLb"><span class="error">*Lütfen boş bırakmayın</span></label>
-                                            </p>
-                                            <div class="clearfix"></div>
-                                            <a href="#" class="contact-btn">G&Ouml;nder</a>
-                                        </form>
-                                    </div><!--MainContent-->
-                                </div><!--form-inner-->
-                    </div><!--form-wrapper-->
-                </div><!--/.content-inner-->
-            </div><!--/.row-->
-            
-        </div><!--/.content-inner-->
+                <div class="location_map">
+                	<h2>Harita:</h2>
+                    
+                    <div class="gmap">
+                    	<div id="gmap"></div>
+                    </div>
+          <script>
+              $(window).ready(function () {
+                  $("#gmap").gMap({
+                      markers: [{
+                      latitude: 39.880438,
+                      longitude: 32.821053,
+                      title: "American Fine Arts and Drama Anaokulları",
+                      html:"<strong> American Fine Arts and Drama Anaokulları </strong> <br>Adres: Huzur Mahallesi 1066. Cadde (Eski 1. Cadde) No:29/1 Öveçler / ANKARA",
+                      popup: false,
+                icon: {
+                  image: 'http://yumistudio.com/kiddo/images/icons/gmap_icon.png',
+                  iconsize: [25, 34],
+                  iconanchor: [12,34],
+                  infowindowanchor: [0, 0]
+                  }
+                }],
+                      zoom: 14,
+                scrollwheel: true
+                      });
+                  });
+          </script>
+                </div>
+                
+	        </div>
+	        <!--/ content -->
+		                    
+          <div class="clear"></div>
+        </div>
         
         
-    </section><!--/.content-->
+      <div id="bottom_bee"></div>        
+	</div>
+</div>        
+<!--/ middle -->
 
+
+
+<div class="footer">
+<div class="inner">
+	<div class="container clearfix">
     
-    <section id="footer" class="clearfix">
-        <div class="content container">
-        </div><!--/.container-->
-        <div class="border-grey container"></div>
-        <div class="copyright clearfix">
-            <div class="container center">
-                <p>Copyright 2013 &#169; Masalhane <a href="http://www.masalhane.com">Masalhane</a></p>
-            </div><!--/.container-->
-        </div><!--/.copyright-->
-    </section><!--/footer-->  
+        <div class="copyright">
+        	<span class="copy">2013</span>  
+        	<a href="">American Fine Arts and Drama Anaokulları</a>
+        </div>
+        	        
+    </div> 
+</div>
+</div>
 
-</section><!--/.wrapper-->
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-
-
-
-    <script src="{base}js/jquery.js"></script>
-    <script type="text/javascript" src="{base}js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="{base}js/contact.js"></script>
-    <script src="{base}js/jquery.prettyPhoto.js"></script> 
-    <script src="{base}js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.easing.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="{base}js/jflickrfeed.min.js"></script>
-    <script type="text/javascript" src="{base}js/ticker.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.ui.totop.js"></script>
-    <script type="text/javascript" src="{base}js/hoverIntent.js"></script>
-    <script type="text/javascript" src="{base}js/superfish.js"></script>
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="{base}js/jquery.ui.map.js"></script>
-    <script type="text/javascript" src="{base}js/map.js"></script>
-    <script type="text/javascript" src="{base}js/map-marker.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.inview.js"></script>
-    <script type="text/javascript" src="{base}js/script.js"></script>
-    <script type="text/javascript" src="{base}js/switcher.js"></script>
-    
-
-</body></html>
+</div>
+</body>
+</html>

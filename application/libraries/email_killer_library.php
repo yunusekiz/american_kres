@@ -28,8 +28,8 @@ class email_killer_library{
 	{
 		if ($this->CI->email->send())
 			return TRUE;
-		else
-			$this->debug_data = $this->CI->email->print_debugger(); // metod TRUE dönmezse $debug_data değişkenini set et.
+		//else
+			//$this->debug_data = $this->CI->email->print_debugger(); // metod TRUE dönmezse $debug_data değişkenini set et.
 	}
 
 	public function setEmailData(array $email_data)

@@ -2,199 +2,235 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{title}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta name="author" content="American Fine Arts">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<link href='http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Nunito:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- Le styles -->
-    <link href="{base}css/bootstrap.min.css" rel="stylesheet">
-    <link href="{base}css/font-awesome.min.css" rel="stylesheet">
-    <link href="{base}css/prettyPhoto.css" rel="stylesheet">
-    <link href="{base}css/jquery.bxslider.css" rel="stylesheet">
-    <link href="{base}css/style.css" rel="stylesheet">
-    <link class="style" href="{base}css/style-default.css" rel="stylesheet">
-    <link href="{base}css/swicther.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<link href="style.css" media="screen" rel="stylesheet">
+<link href="screen.css" media="screen" rel="stylesheet">
+<!-- custom CSS -->
+<link href="custom.css" media="screen" rel="stylesheet">
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/respond.min.js"></script>                   
+<script src="js/libs/jquery.min.js"></script>
+<!-- scripts  -->
+<script src="js/jquery.spritely.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/hoverIntent.js"></script>
+<!-- Slider  -->
+<link href="rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+<script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="images/favicon.png"><!--favicon image-->
-  </head>
+</head>
 
-  <body>
-  
-<!--   <div id="style-menu">
-      <div class="switch-btn"><i class="icon-cog"></i></div>
-      <ul class="clearfix">
-        <li class="switch-title">Choose Color</li>
-        <li><a class="orange" href="#" data-rel="css/style-default.css"></a></li>
-        <li><a class="red" href="#" data-rel="css/style-red.css"></a></li>
-        <li><a class="blue" href="#" data-rel="css/style-blue.css"></a></li>
-        <li><a class="green" href="#" data-rel="css/style-green.css"></a></li>
-        <li><a class="purple" href="#" data-rel="css/style-purple.css"></a></li>
-        <li><a class="yellow" href="#" data-rel="css/style-yellow.css"></a></li>
-      </ul>
-  </div> -->
-  
-<section class="wrapper clearfix">
-    <section id="header" class="clearfix">
-<!--        <div class="top-header clearfix">
-            <div class="container">
-                <ul class="contact-top clearfix">
-                    <li class="contact-text">
-                        <p><i class="icon-home"></i><span>Visit Us :  7384 Buah Batu Street</span></p>
-                    </li>
-                    <li class="contact-text">
-                        <p><i class="icon-phone"></i><span>Contact Us : 1234-567-890</span></p>
-                    </li>
-                    <li class="contact-text">
-                        <p><i class="icon-envelope"></i><span>Mail Us : <a href="#">email@email.com</a></span></p>
-                    </li>
-                </ul>
-                <div class="top-social">
+<body>
+<div class="body_wrap homepage">
+    
+  <!-- header -->
+  <div class="header">
+      <div class="container">
+      
+          <div class="sunbeam"></div>
+          <div class="rocket"></div>
+          
+          <div class="logo">
+              <a href="{base}"><img src="images/logo.png" alt=""></a>
+          </div>
+          
+          <!-- topmenu -->    
+          <nav id="topmenu" class="clearfix">   
+            <div class="topmenu_inner">  
+              <ul class="dropdown">    
+                                                                           
+                  <li class="menu-level-0"><a href=""><span>Biz Kimiz ? </span></a>
+                      <ul class="submenu-1">                          
+                          <li class="menu-level-1"><a href="{base}hakkimizda"><span>Hakkımızda</span></a></li>
+                          <li class="menu-level-1"><a href="{base}yonetim_kadromuz"><span>Yönetim Kadromuz </span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="#"><span>Eğitim Sistemimiz</span></a>
+                      <ul class="submenu-1">                            
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/9/resim"><span>Resim</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a></li>                                                       
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale, &nbsp;&nbsp; Ritmik dans, Stretching</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="{base}galeri"><span>Galeri</span></a></li>
+                  <li class="menu-level-0"><a href="{base}iletisim"><span>İletişim</span></a></li>                                
+              </ul>  
+              </div>
+          </nav>    
+        <!--/ topmenu -->
+          
+          <div id="top_kite"></div>
+      </div>   
+  </div>
+  <div id="top_clouds" class="top_stage"></div>
+  <!--/ header -->
+        
+<!-- middle -->
+<div id="middle">
+    <div class="container clearfix">
+        
+        <div id="mid_bird"></div>
+        <div id="mid_baloon"></div>
+    
+        <!-- header slider -->
+        <div class="header_slider">
+        
+            <div class="banner-container">
+                <div class="banner">
                     <ul>
-                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#"><i class="icon-dribble"></i></a></li>
-                        <li><a href="#"><i class="icon-skype"></i></a></li>
-                        <li><a href="#"><i class="icon-xing"></i></a></li>
+                        {slider_iteration}
+                        <li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300">
+                            <img src="{base}{slider_big_photo}" alt="">
+                            
+                            <div class="caption sft slide_title1" data-x="80" data-y="30" data-speed="900" data-start="400" data-easing="easeOutExpo">
+                                {slider_text_detail} 
+                            </div>
+                        </li>
+                        {/slider_iteration}
                     </ul>
                 </div>
             </div>
-        </div> --><!--/.top-header-->
-        <div class="container menu">
-            <div class="center clearfix">
-                    <ul class="navigation clearfix">
-                        <li><a href="{base}">ANASAYFA<span class="navi-line paged"></span></a></li>
-                        <li><a href="{base}hakkimizda">HAKKIMIZDA<span class="navi-line"></span></a></li>
-                        <li>
-                            <a href="{base}araclar">KİRALIK ARAÇLAR<span class="navi-line"></span></a>
-                        </li>
-                        <li>
-                            <a href="{base}referanslar">REFERANSLAR<span class="navi-line"></span></a>
-                        </li>
-                        <li><a href="{base}iletisim">İLETİŞİM<span class="navi-line"></span></a></li>
-                    </ul><!--/.navigation-->  
-            </div><!--/.center-->  
-        </div><!--/.menu-->
-
-    </section><!--/header-->
-    <section class="grey clearfix">
-        <div class="motto container">
-            <a class="logo" href="{base}"><img src="images/logo.png" alt="logo"></a>
-            <!-- <p class="logo-text">Arac K&#304;ralama</p> -->
-        </div><!--/.motto-->
-    </section><!--/.gray-->
-</section><!--/.wrapper-->
-
-   
-    <section class="main-slider clearfix">
-        <ul class="slider">
-            {slider_iteration}
-              <li>
-                  <img alt="slider" src="{slider_big_photo}" > 
-                  <div class="slider-caption">
-                    <!-- <span class="border-box"></span> -->
-                    <h3></h3>
-                    <!-- <p>{slider_text_detail}</p> -->
-                    <!-- <a class="more-info" href="#"></a> -->
-                  </div><!--slider-caption-->
-              </li>
-            {/slider_iteration}
-        </ul>
-    </section><!--/.main-slider-->
-
-<section class="wrapper clearfix">     
-
+            <script>
+                jQuery(document).ready(function($) {
     
-    <section class="recent-work clearfix grey">
-        <div class="border-white clearfix"></div>
-        <div class="content container">
-            <div class="title-box clearfix">
-                <i class="icon-magic"></i>
-                <h3 class="title-content">Son Eklenen Ara&Ccedil;lar</h3>
-                <p class="mini-text">Tamamı en son model ara&ccedil;lar</p>
-            </div><!--/.title-box-->
-<!--             <p>A young boy learns that he has extraordinary powers and is not of this Earth. As a young man, he journeys to discover where he came from and what he was 
-            sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind.</p> -->
-            <div class="spacing-40 clearfix"></div>
-            <div class="row">
-                {auto_iteration}
-                <div class="span3 animated content-inner">
-                    <a href="{cover_big_photo}" class="work-hover" data-rel="prettyPhoto">
-                        <div class="mask">
-                            <p class="mask-border">GÖRÜNTÜLE</p>
-                        </div><!--/.mask-->
-                        <img src="{cover_thumb_photo}" alt="{brand_name} {auto_title}">
-                    </a><!--/.work-hover-->
-                    <div class="works-caption clearfix">
-                       <!--  <span class="border-work"></span>
-                        <i class="icon-glass work-icon"></i> -->
-                        <h3><a href="{base}araclar/detay/{auto_id}/{brand_css}/{auto_css}" title="Fiyat Bilgisi İçin Tıklayınız">{brand_name}</a></h3>
-                        <a href="{base}araclar/detay/{auto_id}/{brand_css}/{auto_css}" title="Fiyat Bilgisi İçin Tıklayınız"><p>{auto_title}</p></a>
+                if ($.fn.cssOriginal!=undefined)
+                    $.fn.css = $.fn.cssOriginal;
+    
+                $('.banner').revolution({
+                        delay:8000,
+                        startwidth:940,
+                        startheight:356,
+    
+                        onHoverStop:"on",                       // Stop Banner Timet at Hover on Slide on/off
+                        hideThumbs:0,
+                        navigationType:"none",                  // bullet, thumb, none
+                        navigationArrows:"solo",                // nexttobullets, solo (old name verticalcentered), none
+    
+                        navigationStyle:"round",                // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+                        
+                        navigationHAlign:"center",              // Vertical Align top,center,bottom
+                        navigationVAlign:"center",              // Horizontal Align left,center,right
+                        
+                        soloArrowLeftHalign:"left",
+                        soloArrowLeftValign:"center",
+                        soloArrowLeftHOffset:-29,
+                        soloArrowLeftVOffset:0,
+
+                        soloArrowRightHalign:"right",
+                        soloArrowRightValign:"center",
+                        soloArrowRightHOffset:-29,
+                        soloArrowRightVOffset:0,
+    
+                        touchenabled:"on",                      // Enable Swipe Function : on/off
+    
+                        stopAtSlide:-1,                         // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+                        stopAfterLoops:-1,                      // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+    
+                        hideCaptionAtLimit:0,                   // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+                        hideAllCaptionAtLilmit:0,               // Hide all The Captions if Width of Browser is less then this value
+                        hideSliderAtLimit:0,                    // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+    
+                        fullWidth:"off",
+                        shadow:0                                //0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+    
+                    });
+                });
+            </script>
+            
+        </div>
+        <!--/ header slider -->
+        
+        <!-- boxes, 3 cols -->
+        <div class="boxrow clearfix">
+                        
+            <div class="box box_1">
+                <div class="box_content">
+                    <div class="box_thumb"><img src="images/temp/box_image.jpg" width="248" height="194" alt=""></div>
+                    <h3>Duyurular!</h3>
+                    {news_iteration}
+                   <div class="staff_title"> 
+                    <span class="subtitle">{news_detail}</span><br/>
+                    <span class="subtitle">Tarih: {news_date} </span>
+                   </div> 
+                    {/news_iteration}
+                </div>
+                <div class="box_bot">
+                <a href="duyurular" class="btn"><span>Tüm Duyurular</span></a>
+                </div>
+            </div>
+            
+            <div class="box box_2">
+                <div class="box_content">
+                    <div class="list_numbers">
+                    <h3>Listeler</h3>
+                        <ol>
+                            {lists_iteration}
+                            <li class="menu_blue"><a href="{list_file_path}"><strong>{list_title}</strong> <span>{list_detail}</span></a></li>
+                            {/lists_iteration}
+                        </ol>
                     </div>
-                </div><!--/.span3--> 
-                {/auto_iteration}               
+                </div>
+                <div class="box_bot">
+                <!-- <a href="#" class="btn"><span></span></a> -->
+                </div>
+            </div>
+            
+            <div class="box box_3">
+                <div class="box_content">
+                    <h3>Etkinlikler</h3>
+                    <div class="box_thumb_round"><img src="images/temp/asdf.jpg" alt=""></div>                    
+                    <div class="staff_title"><strong></strong>
+                    {activity_iteration} 
+                      <span class="subtitle">{acty_title}
+                      </span><br> 
+                      <p>
+                        <a href="etkinlikler/{acty_id}" class="link_more">Detaylar</a>
+                      </p>
+                    {/activity_iteration}  
+                    </div>
+                    <!-- <p>Etkinlik sayfamız güncellenmektedir </p> -->
+                </div>
+                <div class="box_bot">
+                <a href="onceki_etkinliklerimiz" class="btn"><span>Önceki Etkinliklerimiz</span></a>
+                </div>
+            </div>
                 
-                <div class="clearfix"></div>
+        </div>
+        <!--/ boxes, 3 cols -->
+        
+      <div id="bottom_bee"></div>        
+    </div>
+</div>        
+<!--/ middle -->
 
-            </div><!--/.row-->
-            <a class="read-more" href="{base}araclar">T&Uuml;m Ara&Ccedil;larimiz <i class="icon-double-angle-right"></i></a>
-        </div><!--/.container-->
-    </section><!--recent-work-->
+
+
+<div class="footer">
+<div class="inner">
+    <div class="container clearfix">
     
-    <div class="border-white clearfix"></div>
-    
-    <section id="footer" class="clearfix">
-        <div class="content container">
-        </div><!--/.container-->
-        <div class="border-grey container"></div>
-        <div class="copyright clearfix">
-            <div class="container center">
-                <p>Copyright 2013 &#169; Masalhane <a href="http://www.masalhane.com">Masalhane</a></p>
-            </div><!--/.container-->
-        </div><!--/.copyright-->
-    </section><!--/footer-->    
+        <div class="copyright">
+            <span class="copy">2013</span>  
+            <a href="">American Fine Arts and Drama Anaokulları</a>
+        </div>
+                    
+    </div> 
+</div>
+</div>
 
-</section><!--/.wrapper-->
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{base}js/jquery.js"></script>
-    <script type="text/javascript" src="{base}js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="{base}js/contact.js"></script>
-    <script src="{base}js/jquery.prettyPhoto.js"></script> 
-    <script src="{base}js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.easing.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="{base}js/jflickrfeed.min.js"></script>
-    <script type="text/javascript" src="{base}js/ticker.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.ui.totop.js"></script>
-    <script type="text/javascript" src="{base}js/hoverIntent.js"></script>
-    <script type="text/javascript" src="{base}js/superfish.js"></script>
-    <script type="text/javascript" src="{base}js/sliderhome.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.inview.js"></script>
-    <script type="text/javascript" src="{base}js/script.js"></script>
-    <script type="text/javascript" src="{base}js/switcher.js"></script>
-    
-
-
-
- 
-
-
-    
-
-</body></html>
+</div>
+</body>
+</html>

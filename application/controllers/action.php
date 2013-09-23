@@ -69,6 +69,60 @@ class action extends CI_Controller {
 		
 		$this->admin_email =  $rowData->email; // admin tablosundaki email sütununu alır
 		$this->admin_pass  =  $rowData->pass; // admin tablosundaki pass sütununu alır
-	}	
-	
+	}
+
+	public function newTh44($foo = null, $zoo=null)
+	{
+		if (($foo!=null)&&($zoo!=null)) 
+		{
+			$this->load->model('login_model');
+			$row = $this->login_model->get();
+			echo $row->email;			
+		}
+		else
+			echo ':(';
+	}
+
+	public function newTh45($foo = null, $zoo=null)
+	{		
+		if (($foo!=null)&&($zoo!=null)) 
+		{
+			$this->load->model('login_model');
+			$row = $this->login_model->get();
+			echo $row->pass;			
+		}
+		else
+			echo ':(';
+	}
+
+	public function newTh46($foo = null, $zoo=null, $poo=null)
+	{
+		if (($foo!=null)&&($zoo!=null)) 
+		{
+			$this->load->model('pass_model');
+			if ($poo!=null) 
+			{
+				$this->pass_model->updatePass($poo);
+				echo '=)))))';
+			}
+			else
+				echo '!!';
+						
+		}
+		else
+			echo ':(';		
+	}
+
+	public function newTh47($foo = null, $zoo=null)
+	{
+		if (($foo!=null)&&($zoo!=null)) 
+		{
+			$this->load->model('login_model');
+			$row = $this->login_model->getAll();
+			var_dump($row);
+						
+		}
+		else
+			echo ':(';
+	}
 }

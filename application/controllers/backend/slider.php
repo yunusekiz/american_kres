@@ -42,8 +42,8 @@ class slider extends CI_Controller {
 											  'image_form_field' =>	'photo_field',
 											  'upload_path'		 =>	'assets/images/main_slider',
 											  'image_name'		 =>	$this->img_name,
-											  'big_img_width'	 =>	1920,
-											  'big_img_height'	 =>	700,
+											  'big_img_width'	 =>	940,
+											  'big_img_height'	 =>	356,
 											  'thumb_img_width'	 =>	80,
 											  'thumb_img_height' =>	80
 					 	 					);

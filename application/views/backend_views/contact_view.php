@@ -42,7 +42,7 @@
 								</br>
 								<p>
 									<label> Address (English version of address) </label>
-									<input class="text-input large-input" type="text" style="color:black" id="large-input" name="address_field_end" value="{address_eng}" />
+									<input class="text-input large-input" type="text" style="color:black" id="large-input" name="address_field_eng" value="{address_eng}" />
 								</p>
 
 								<p>

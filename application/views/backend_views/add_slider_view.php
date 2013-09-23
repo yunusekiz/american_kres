@@ -21,7 +21,7 @@
 								</p>
                   
               					<p>
-                  					<label> Slider' a yeni fotoğraf yüklemek için dosya seçin :  </label>
+                  					<label> Slider' a yeni fotoğraf yüklemek için dosya seçin : ( ideal çözünürlük 960*356px ) </label>
                    					<input type="file" name="photo_field" accept="image/*" />
                    					           					
               					</p> <br/> <hr> <br/>

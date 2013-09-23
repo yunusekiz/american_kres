@@ -1,133 +1,175 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{title}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="American Fine Arts">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<link href='http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Nunito:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- Le styles -->
-    <link href="{base}css/bootstrap.min.css" rel="stylesheet">
-    <link href="{base}css/font-awesome.min.css" rel="stylesheet">
-    <link href="{base}css/prettyPhoto.css" rel="stylesheet">
-    <link href="{base}css/style.css" rel="stylesheet">
-    <link class="style" href="{base}css/style-default.css" rel="stylesheet">
-    <link href="css/swicther.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<link href="style.css" media="screen" rel="stylesheet">
+<link href="screen.css" media="screen" rel="stylesheet">
+<!-- custom CSS -->
+<link href="custom.css" media="screen" rel="stylesheet">
+<!-- main JS libs  -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/respond.min.js"></script>                   
+<script src="js/libs/jquery.min.js"></script>
+<!-- scripts  -->
+<script src="js/jquery.spritely.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/hoverIntent.js"></script>
+<!-- custom input -->
+<script src="js/jquery.customInput.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="images/favicon.png"><!--favicon image-->
-  </head>
+</head>
 
-  <body>
- 
-<section class="wrapper clearfix">
-    <section id="header" class="clearfix">
-        <div class="container menu">
-            <div class="center clearfix">
-                    <ul class="navigation clearfix">
-                        <li><a href="{base}">Anasayfa<span class="navi-line"></span></a></li>
-                        <li><a href="{base}hakkimizda">HAKKIMIZDA<span class="navi-line paged"></span></a></li>
-                        <li>
-                            <a href="{base}araclar">KİRALIK ARAÇLAR<span class="navi-line"></span></a>
-                        </li>
-                        <li>
-                            <a href="{base}referanslar">Referanslar<span class="navi-line"></span></a>
-                        </li>
-                        <li><a href="{base}iletisim">İLETİŞİM<span class="navi-line"></span></a></li>
-                    </ul><!--/.navigation-->  
-            </div><!--/.center-->  
-        </div><!--/.menu-->
-
-    </section><!--/header-->
-    <section class="grey clearfix">
-        <div class="motto container">
-            <a class="logo" href="{base}"><img src="{base}images/logo.png" alt="logo"></a>
-            <!-- <p class="logo-text">Arac K&#304;ralama</p> -->
-        </div><!--/.motto-->
-    </section><!--/.gray-->
-
-    <section class="content clearfix">  
-        <div class="content-inner container">
-            <h3 class="big-text">HAKKIMIZDA</h3>
-            
-            {about_iteration}
-                <p class="strong"> {about_text_detail} </p>
-            {/about_iteration}
-            
-            <div class="spacing-40 clearfix"></div>
-                    
-            <div class="spacing-40 clearfix"></div>
-            
-            <div class="row">
-                {auto_iteration}
-                <div class="span3 animated content-inner">
-                    <a href="{cover_big_photo}" class="work-hover" data-rel="prettyPhoto">
-                        <div class="mask">
-                            <p class="mask-border">GÖRÜNTÜLE</p>
-                        </div><!--/.mask-->
-                        <img src="{cover_thumb_photo}" alt="{brand_name} {auto_title}">
-                    </a><!--/.work-hover-->
-                    <div class="works-caption clearfix">
-                       <!--  <span class="border-work"></span>
-                        <i class="icon-glass work-icon"></i> -->
-                        <h3><a href="{base}araclar/detay/{auto_id}/{brand_css}/{auto_css}" title="Fiyat Bilgisi İçin Tıklayınız">{brand_name}</a></h3>
-                        <a href="{base}araclar/detay/{auto_id}/{brand_css}/{auto_css}" title="Fiyat Bilgisi İçin Tıklayınız"><p>{auto_title}</p>
-                    </div>
-                </div><!--/.span3--> 
-                {/auto_iteration}               
-                
-                <div class="clearfix"></div>
-
-            </div><!--/.row-->
-        </div><!--/.content-inner-->
-        
-        <div class="clearfix"></div>
-        
-    </section><!--/.content-->
-
+<body>
+<div class="body_wrap blogpage">
     
-    <section id="footer" class="clearfix">
-        <div class="content container">
-        </div><!--/.container-->
-        <div class="border-grey container"></div>
-        <div class="copyright clearfix">
-            <div class="container center">
-                <p>Copyright 2013 &#169; Masalhane <a href="http://www.masalhane.com">Masalhane</a></p>
-            </div><!--/.container-->
-        </div><!--/.copyright-->
-    </section><!--/footer-->    
+  <!-- header -->
+  <div class="header">
+      <div class="container">
+      
+          <div class="sunbeam"></div>
+          <div class="rocket"></div>
+          
+          <div class="logo">
+              <a href="{base}"><img src="images/logo.png" alt=""></a>
+          </div>
+          
+          <!-- topmenu -->    
+          <nav id="topmenu" class="clearfix">   
+            <div class="topmenu_inner">  
+              <ul class="dropdown">    
+                                                                           
+                  <li class="menu-level-0"><a href=""><span>Biz Kimiz ? </span></a>
+                      <ul class="submenu-1">                          
+                          <li class="menu-level-1"><a href="{base}hakkimizda"><span>Hakkımızda</span></a></li>
+                          <li class="menu-level-1"><a href="{base}yonetim_kadromuz"><span>Yönetim Kadromuz </span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="#"><span>Eğitim Sistemimiz</span></a>
+                      <ul class="submenu-1">                            
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/9/resim"><span>Resim</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a></li>                                                       
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale, &nbsp;&nbsp; Ritmik dans, Stretching</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a></li>
+                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a></li>
+                      </ul>
+                  </li>
+                  <li class="menu-level-0"><a href="{base}/galeri"><span>Galeri</span></a></li>
+                  <li class="menu-level-0"><a href="{base}/iletisim"><span>İletişim</span></a></li>                                
+              </ul>  
+              </div>
+          </nav>    
+        <!--/ topmenu -->
+          
+          <div id="top_kite"></div>
+      </div>   
+  </div>
+  <div id="top_clouds" class="top_stage"></div>
+  <!--/ header -->
+        
+<!-- middle -->
+<div id="middle" class="cols2">
+    <div class="container clearfix">
+        
+        <div id="mid_bird"></div>
+        <div id="mid_baloon"></div>
+        
+        <div class="content_wrapper">   
+            
+            <div class="title_top">
+                <strong>Hakkımızda</strong>
+            </div>
+            
+            <!-- content -->
+            <div class="content">
+                
+                <!-- post details -->
+                <div class="postlist post-detail">
+                    
+                    <div class="post-item">
+                        <div class="post-title">
+                           <!--  <h1>Hakkımızda</h1> -->
+<!--                             <div class="post-meta"> by <a href="#" class="post-author">Peter Jacobson</a> &nbsp;|&nbsp; posted on <span class="post-date">25 May 2013</span> &nbsp;|&nbsp; <a href="blog-details.html#comments" class="link-comments anchor">13 Comments</a></div>      -->               
+                        </div>                            
+                        
+<!--                         <div class="post-image"><a href="blog-details.html"><img src="images/temp/post_img_big_1.jpg" alt="" /></a></div> -->
+                        
+                        <div class="entry clearfix">
+                          {about_iteration}
+                            <p>{about_text_detail}</p>
+                          {/about_iteration}
+                        </div>  
+                        
+                    </div>
+                    
+                </div>
+                <!--/ post details -->
 
-</section><!--/.wrapper-->
+                
+            </div>
+            <!--/ content -->
+    
+            <!-- sidebar -->
+            <div class="sidebar">
+                
+                <!-- widget_categories -->
+                <div class="widget-container widget_categories">
+                    <h3 class="widget-title">Eğitim Sistemimiz</h3>
+                    <ul>
+                        <li><a href="{base}egitim_sistemimiz/10/ingilizce"><span>ingilizce</span></a></li> 
+                        <li><a href="{base}egitim_sistemimiz/9/resim"><span>resim</span></a></li> 
+                        <li><a href="{base}egitim_sistemimiz/8/muzik"><span>müzik</span></a></li> 
+                        <li><a href="{base}egitim_sistemimiz/7/drama"><span>drama</span></a></li> 
+                        <li><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>bale, ritmik dans, stretching</span></a></li> 
+                        <li><a href="{base}egitim_sistemimiz/5/yoga"><span>yoga</span></a></li> 
+                        <li><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>mental matematik</span></a></li>
+                    </ul>
+                </div>  
+                <!--/ widget_categories -->
+                
+                
+            </div>
+            <!--/ sidebar -->
+            
+            <div class="clear"></div>
+        </div>
+        
+        
+      <div id="bottom_bee"></div>        
+    </div>
+</div>        
+<!--/ middle -->
 
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{base}js/jquery.js"></script>
-    <script type="text/javascript" src="{base}js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="{base}js/contact.js"></script>
-    <script src="{base}js/jquery.prettyPhoto.js"></script> 
-    <script type="text/javascript" src="{base}js/jquery.easing.js"></script>
-    <script type="text/javascript" src="{base}js/jflickrfeed.min.js"></script>
-    <script type="text/javascript" src="{base}js/ticker.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.ui.totop.js"></script>
-    <script type="text/javascript" src="{base}js/hoverIntent.js"></script>
-    <script type="text/javascript" src="{base}js/superfish.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="{base}js/jquery.inview.js"></script>
-    <script type="text/javascript" src="{base}js/script.js"></script>
-    <script type="text/javascript" src="{base}js/switcher.js"></script>
 
-</body></html>
+<div class="footer">
+<div class="inner">
+    <div class="container clearfix">
+    
+        <div class="copyright">
+            <span class="copy">2013</span>  
+            <a href="">American Fine Arts and Drama Anaokulları</a>
+        </div>
+                    
+    </div> 
+</div>
+</div>
+
+</div>
+</body>
+</html>

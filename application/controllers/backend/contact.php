@@ -54,19 +54,19 @@ class contact extends CI_Controller {
 		$phone_field	= $this->input->post('phone_field');
 		$fax_field		= $this->input->post('fax_field');
 		$email_field	= $this->input->post('email_field');
-		$address_field_eng	= $this->input->post('address_field_eng');
+		$address_field_eng = $this->input->post('address_field_eng');
 		
-		if(($address_field == '') || ($phone_field == '') || ($fax_field == ''))
+		if(($address_field == '') || ($phone_field == ''))
 		{
 			$message = 'Lütfen Boş Alan Bırakmayın';
 			$this->jquery_notification_library->errorMessage($message, '../contact/editContact');
 		}
 		else
 		{
-			if($email_field=='')
+			if ($email_field =='')
 				$email_field = 'ornek_eposta_adresi';
-			if ($address_field_eng == '')
-				$address_field_eng = 'default text';
+			if($address_field_eng=='')
+				$address_field_eng = 'default_eng_address';
 
 			$update = $this->contact_model->updateRow($address_field, $phone_field, $fax_field, $email_field, $address_field_eng);
 			if($update == TRUE)

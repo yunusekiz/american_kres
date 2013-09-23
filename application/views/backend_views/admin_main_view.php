@@ -27,46 +27,38 @@
 					</ul>
 
 				</li>
-				<li> 
-					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
-					Markalar
+
+				<li>
+					<a href="#" class="nav-top-item {slider_current_nav}">
+						Listeler
 					</a>
 					<ul>
-						<li><a href="{base}backend/brand/addItemForm" class="{add_ref_current}">Yeni Kayıt Ekle</a></li>
-						<li><a href="{base}backend/brand/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
+						<li><a href="{base}backend/lists/addItemForm" class="{big_slider_current}">Yeni Kayıt Ekle</a></li>
+						<li><a href="{base}backend/lists/allItems" class="{big_slider_current}">Kayıtları Düzenle/Sil</a></li>																	
 					</ul>
+
 				</li>
 
-				
-				<li> 
-					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
-					Kiralık Araçlar (detaylar)
+				<li>
+					<a href="#" class="nav-top-item {slider_current_nav}">
+						Etkinlikler
 					</a>
 					<ul>
-						<li><a href="{base}backend/auto/addItemForm" class="{add_ref_current}">Yeni Kayıt Ekle</a></li>
-						<li><a href="{base}backend/auto/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
+						<li><a href="{base}backend/acty/addItemForm" class="{big_slider_current}">Yeni Kayıt Ekle</a></li>
+						<li><a href="{base}backend/acty/allItems" class="{big_slider_current}">Kayıtları Düzenle/Sil</a></li>																	
 					</ul>
-				</li>
+
+				</li>								
 
 				<li> 
 					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
-					Kiralık Araçlar (kapak)
+					Yönetim Kadromuz
 					</a>
 					<ul>
-						<li><a href="{base}backend/auto_cover/addItemForm" class="{add_ref_current}">Yeni Kayıt Ekle</a></li>
-						<li><a href="{base}backend/auto_cover/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
+						<li><a href="{base}backend/team/addItemForm" class="{add_ref_current}">Yeni Kayıt Ekle</a></li>
+						<li><a href="{base}backend/team/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
 					</ul>
 				</li>				
-
-				<li> 
-					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
-					Referanslar
-					</a>
-					<ul>
-						<li><a href="{base}backend/reference/updateItemDetailForm" class="{edit_ref_current}">Kayıt Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
-					</ul>
-				</li>		
-
 
 				<li> 
 					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
@@ -75,7 +67,36 @@
 					<ul>
 						<li><a href="{base}backend/about/editAboutUs" class="{edit_ref_current}">Kayıt Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
 					</ul>
-				</li>																		
+				</li>					
+
+				<li> 
+					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
+					Eğitim Sistemimiz
+					</a>
+					<ul>
+						<li><a href="{base}backend/edu/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
+					</ul>
+				</li>
+
+				<li> 
+					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
+					Galeri
+					</a>
+					<ul>
+						<li><a href="{base}backend/gallery/addItemForm" class="{add_ref_current}">Yeni Kayıt Ekle</a></li>
+						<li><a href="{base}backend/gallery/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
+					</ul>
+				</li>
+				<li> 
+					<a href="#" class="nav-top-item {ref_current_nav}"> <!-- Add the class "current" to current menu item -->
+					Duyurular
+					</a>
+					<ul>
+						<li><a href="{base}backend/news/addItemForm" class="{add_ref_current}">Yeni Kayıt Ekle</a></li>
+						<li><a href="{base}backend/news/allItems" class="{edit_ref_current}">Kayıtları Düzenle/Sil</a></li> <!-- Add class "current" to sub menu items also -->
+					</ul>
+				</li>
+																	
 		
 
 				<li> 

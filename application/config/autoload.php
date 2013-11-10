@@ -64,7 +64,7 @@ $autoload['libraries'] = array("parser","database","session_killer_library","ema
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array("url", "filter_killer", "delete_file_killer");
+$autoload['helper'] = array("url", "filter_killer", "delete_file_killer","return_base");
 
 
 /*

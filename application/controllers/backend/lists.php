@@ -11,7 +11,7 @@ class lists extends CI_Controller {
 
 	public function index()
 	{
-		return null;
+		return_base('backend_base');
 	}
 	
 	public function __construct()
@@ -48,12 +48,13 @@ class lists extends CI_Controller {
 
 	public function addItem()
 	{
+		$cat_id		 	 = $this->input->post('cat_id');
 		$list_title 	 = $this->input->post('list_title');
 		$list_detail 	 = $this->input->post('list_detail');
 		$list_title_eng  = $this->input->post('list_title_eng');
 		$list_detail_eng = $this->input->post('list_detail_eng');
 
-		if (($list_title!='')&&($list_detail!='')) 
+		if (($list_title!='')&&($list_detail!='')&&($cat_id!=0)) 
 		{
 			if($list_title_eng=='')
 				$list_title_eng = 'default_list_title';
@@ -76,12 +77,11 @@ class lists extends CI_Controller {
 				$file_path_after_upload = $this->image_upload_resize_library->getUploadedFileFullPath();
 				$f_path = strstr($file_path_after_upload, 'assets');
 
-				$insert_item_detail_to_db = $this->{$this->model_name}->insertNewItemDetail(
-																						  	  $list_title,
-																						  	  $list_detail,
-																						  	  $list_title_eng,
+				$insert_item_detail_to_db = $this->{$this->model_name}->insertNewItemDetail(  
+																							  $cat_id,$list_title,
+																						  	  $list_detail,$list_title_eng,
 																						  	  $list_detail_eng
-																						    );
+																						   );
 				if ($insert_item_detail_to_db==TRUE) // item detail ler db ye insert edilmişse, item photo bilgilerini db ye insert eder 
 				{
 					$insert_item_photo_to_db = $this->{$this->model_name}->insertNewItemPhoto($f_path);

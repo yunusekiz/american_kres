@@ -34,7 +34,7 @@
 </head>
 
 <body>
-<div class="body_wrap blogpage">
+<div class="body_wrap">
 	
   <!-- header -->
   <div class="header">
@@ -94,8 +94,8 @@
                           </li>                          
                       </ul>
                   </li>
-                  <li class="menu-level-0"><a href="{base}galeri"><span>Galeri</span></a></li>
-                  <li class="menu-level-0"><a href="{base}iletisim"><span>İletişim</span></a></li>                                
+                  <li class="menu-level-0"><a href="{base}/galeri"><span>Galeri</span></a></li>
+                  <li class="menu-level-0"><a href="{base}/iletisim"><span>İletişim</span></a></li>                                
               </ul>  
               </div>
           </nav>    
@@ -108,73 +108,43 @@
   <!--/ header -->
 		
 <!-- middle -->
-<div id="middle" class="cols2">
+<div id="middle" class="full_width">
 	<div class="container clearfix">
     	
-        <div id="mid_bird"></div>
+        <!-- <div id="mid_bird"></div> -->
         <div id="mid_baloon"></div>
     	
         <div class="content_wrapper">   
         	
             <div class="title_top">
-            	<strong>Etkinlikler</strong>
+            	<h1>Yemek Listeleri</h1>
             </div>
             
 	        <!-- content -->
 	        <div class="content">
             	
-                <!-- post details -->
-	            <div class="postlist post-detail">
+                <!-- articles layout: 2 cols -->
+                <div class="clearfix article_list_2 columns2">
                 	
-                    <div class="post-item">
-                    	{acty_iteration}
-		                <div class="post-title">
-		                                    
-		                </div>                            
-		                
-	                    <div class="post-image">
-	                    	<img src="{base}{acty_big_photo}" alt="" />
-	                    </div>
-	                    
-		                <div class="entry clearfix">
-		                	<span class="text_style1">{acty_title}</span> <br/>
-                 			<div class="post-meta"><a href="#" class="post-author">Tarih : </a> 
-                 				<span class="post-date">{acty_date}</span> 
-                 			</div>  
-	        			</div>		                	  
-		                    <p>{acty_detail}</p>
-		                </div>
-		                {/acty_iteration}             
-					</div>
+                  {list_iteration}
+                    <div class="article_item_2">
+                        <div class="article_title" style="height:45px;">
+                          <h3 style="color:#673509;font-family:'Nunito', sans-serif;">{list_title}</h3>
+                          <h5 style="font-family:tahoma;margin-top:-10px;">
+                            <a style="color:#1e8ba7;" href="{base}{list_file_path}">{list_detail}</a>
+                          </h5>
+                            <!-- <span class="subtitle"> Tarih : {news_date}</span> -->
+                        </div>
+                    </div>
+                  {/list_iteration}  
                     
                 </div>
-                <!--/ post details --> 
-
+                <!--/ articles layout: 2 cols -->
+                
+	        </div>
 	        <!--/ content -->
-	
-           <!-- sidebar -->
-            <div class="sidebar">
-                
-                <!-- widget_categories -->
-                <div class="widget-container widget_categories">
-                    <h3 class="widget-title">Eğitim Sistemimiz</h3>
-                    <ul>
-                        <li><a href="{base}egitim_sistemimiz/10/ingilizce"><span>ingilizce</span></a></li> 
-                        <li><a href="{base}egitim_sistemimiz/9/resim"><span>resim</span></a></li> 
-                        <li><a href="{base}egitim_sistemimiz/8/muzik"><span>müzik</span></a></li> 
-                        <li><a href="{base}egitim_sistemimiz/7/drama"><span>drama</span></a></li> 
-                        <li><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>bale, ritmik dans, stretching</span></a></li> 
-                        <li><a href="{base}egitim_sistemimiz/5/yoga"><span>yoga</span></a></li> 
-                        <li><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>mental matematik</span></a></li>
-                    </ul>
-                </div>  
-                <!--/ widget_categories -->
-                
-                
-            </div>
-            <!--/ sidebar -->
-            
-            <div class="clear"></div>
+		                    
+          <div class="clear"></div>
         </div>
         
         
@@ -183,13 +153,15 @@
 </div>        
 <!--/ middle -->
 
+
+
 <div class="footer">
 <div class="inner">
 	<div class="container clearfix">
     
         <div class="copyright">
         	<span class="copy">2013</span>  
-        	<a href="{base}">American Fine Arts and Drama Anaokulları</a>
+        	<a href="">American Fine Arts and Drama Anaokulları</a>
         </div>
         	        
     </div> 

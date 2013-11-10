@@ -27,9 +27,10 @@
 <script src="{base}js/jquery.easing.min.js"></script>
 <script src="{base}js/general.js"></script>
 <script src="{base}js/hoverIntent.js"></script>
-<!-- custom input -->
-<script src="{base}js/jquery.customInput.js"></script>
-<script src="{base}js/jquery.placeholder.min.js"></script>
+
+<!-- shortcode: Lightbox prettyPhoto -->
+<link rel="stylesheet" href="{base}css/prettyPhoto.css">
+<script src="{base}js/jquery.prettyPhoto.js"></script>
 
 </head>
 
@@ -60,13 +61,38 @@
                   </li>
                   <li class="menu-level-0"><a href="#"><span>Eğitim Sistemimiz</span></a>
                       <ul class="submenu-1">                            
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a></li>
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a>
+                          </li>
                           <li class="menu-level-1"><a href="{base}egitim_sistemimiz/9/resim"><span>Resim</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a></li>                                                       
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale, &nbsp;&nbsp; Ritmik dans, Stretching</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a></li>
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale</span></a>
+                          </li>
+                          
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/11/cim-hokeyi">
+                            <span>Çim Hokeyi</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/12/ingilizce-matematik"><span>İngilizce Matematik</span></a>
+                          </li>                          
                       </ul>
                   </li>
                   <li class="menu-level-0"><a href="{base}galeri"><span>Galeri</span></a></li>
@@ -98,10 +124,10 @@
 	        <!-- content -->
 	        <div class="content">
             	
-                <!-- post details -->
-	            <div class="postlist post-detail">
+            <!-- post details -->
+	         <div class="postlist post-detail">
                 	
-                    <div class="post-item">
+                <div class="post-item">
                      {edu_iteration}	
 		                <div class="post-title">
 		                    <h1>{edu_sys_title}</h1>                   
@@ -110,19 +136,25 @@
 		                    <p>{edu_sys_detail}</p>
 		                </div>  
                      {/edu_iteration}                        
-					</div>
+					      </div>
                     
+            </div>
+            <!--/ post details -->
+                <!-- gallery layout -->
+                <div class="clearfix gallery">
+                  {edu_gal_iteration}
+                    <div class="gallery_item">
+                      <a href="{base}{edu_gal_big_photo}" data-rel="prettyPhoto[gal_1]"><img src="{base}{edu_gal_thumb_photo}" alt=""><span></span></a>
+                    </div>
+                  {/edu_gal_iteration}  
                 </div>
-                <!--/ post details -->
-                
-	            
-                
+                <!--/ gallery layout -->            
 	        </div>
 	        <!--/ content -->
+     
 	
            <!-- sidebar -->
             <div class="sidebar">
-                
                 <!-- widget_categories -->
                 <div class="widget-container widget_categories">
                     <h3 class="widget-title">Eğitim Sistemimiz</h3>
@@ -134,11 +166,11 @@
                         <li><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>bale, ritmik dans, stretching</span></a></li> 
                         <li><a href="{base}egitim_sistemimiz/5/yoga"><span>yoga</span></a></li> 
                         <li><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>mental matematik</span></a></li>
+                        <li><a href="{base}egitim_sistemimiz/11/cim-hokeyi"><span>çim hokeyi</span></a></li>
+                        <li><a href="{base}egitim_sistemimiz/12/ingilizce-matematik"><span>ingilizce matematik</span></a></li>
                     </ul>
                 </div>  
-                <!--/ widget_categories -->
-                
-                
+                <!--/ widget_categories -->           
             </div>
             <!--/ sidebar -->
             

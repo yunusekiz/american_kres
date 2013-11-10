@@ -56,13 +56,38 @@
                   </li>
                   <li class="menu-level-0"><a href="#"><span>Eğitim Sistemimiz</span></a>
                       <ul class="submenu-1">                            
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a></li>
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/10/ingilizce"><span>İngilizce</span></a>
+                          </li>
                           <li class="menu-level-1"><a href="{base}egitim_sistemimiz/9/resim"><span>Resim</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a></li>                                                       
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale, &nbsp;&nbsp; Ritmik dans, Stretching</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a></li>
-                          <li class="menu-level-1"><a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a></li>
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/8/muzik"><span>Müzik</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/7/drama"><span>Drama</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/6/bale-ritmik_dans-stretching"><span>Bale</span></a>
+                          </li>
+                          
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/5/yoga"><span>Yoga</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/4/mental-matematik"><span>Mental Matematik</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/11/cim-hokeyi">
+                            <span>Çim Hokeyi</span></a>
+                          </li>
+
+                          <li class="menu-level-1">
+                            <a href="{base}egitim_sistemimiz/12/ingilizce-matematik"><span>İngilizce Matematik</span></a>
+                          </li>                          
                       </ul>
                   </li>
                   <li class="menu-level-0"><a href="{base}galeri"><span>Galeri</span></a></li>
@@ -176,11 +201,18 @@
                 <div class="box_content">
                     <div class="list_numbers">
                     <h3>Listeler</h3>
-                        <ol>
+<!--                         <ol>
                             {lists_iteration}
                             <li class="menu_blue"><a href="{list_file_path}"><strong>{list_title}</strong> <span>{list_detail}</span></a></li>
                             {/lists_iteration}
-                        </ol>
+                        </ol> -->
+                        <ol>
+                            
+                            <li class="menu_blue"><a href="listeler/kategori/yemek-listeleri/1"><strong>Yemek Listesi</strong> <span>tüm yemek listeleri</span></a></li>
+                            <li class="menu_blue"><a href="listeler/kategori/aylık-program/2"><strong>Aylık Program</strong> <span>tüm aylık programlar</span></a></li>
+                            <li class="menu_blue"><a href="#"><strong>Aile Danışmanı</strong> <span>aile danışman detayları</span></a></li>
+                            
+                        </ol>                        
                     </div>
                 </div>
                 <div class="box_bot">

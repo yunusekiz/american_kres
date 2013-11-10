@@ -14,6 +14,17 @@
 							<fieldset> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
 								
 								<p>
+									<label>Liste Kategorisi Seçenekleri </label>              
+									<select name="cat_id" class="small-input" style="color:#000;">
+										<option value="0">Kategori Seçiniz</option>
+										<option value="1">Yemek Listesi</option>
+										<option value="2">Aylık Program</option>
+									</select> 
+								</p><br /><br />
+								<label>(Bilgi ::: yeni bir kayıt ekleyebilmek için önce kategori seçmelisiniz)</label> 
+								<br /><hr><br />
+
+								<p>
 									<label>Liste  Dosyası</label>
                                 	<input type="file" name="photo_field"/>
                                 </p>

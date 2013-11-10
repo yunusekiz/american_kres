@@ -11,9 +11,7 @@
 				<div class="content-box-content">
 			   
 					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
-					
 					<form action="{base}backend/gallery/update" method="post">
-						
 						<table>
 							
 							<thead>
@@ -21,7 +19,7 @@
 								{all_items_header_css}
 									<th>Düzenle</th>
 								    <th></th>
-								    <th></th>
+								    <th>Fotoğraf Ayarları</th>
 								    <th></th>
 								    <th></th>
 								    <th>Eğitim Sistemimiz -Başlık-</th>
@@ -29,22 +27,21 @@
 								</tr>	
 							</thead>
 						 
-						 
 							<tbody>
 								 {all_items}
 								<tr>
 									<td>
-										<a href="updateItemDetailForm/{edu_id}" title="Düzenle"><img src="{base}assets/backend_assets/images/icons/pencil.png" alt="Düzenle" /></a>
+										<a href="{base}backend/edu/updateItemDetailForm/{edu_id}" title="Düzenle"><img src="{base}assets/backend_assets/images/icons/pencil.png" alt="Düzenle" /></a>
 									</td>
-									
 									<td></td>
-									<td></td>
+									<td>
+										<a href="{base}backend/edu_gal/allItems/{edu_id}/{edu_sys_title}" title="Fotoğraflar"><img src="{base}assets/backend_assets/images/icons/gallery_49.png" alt="Fotoğraflar" /></a>
+									</td>
 									<td></td>
 									<td></td>
 									<td>{edu_sys_title}</td>
 								</tr>
 								 {/all_items}
-
 							</tbody>
 							
 							<tfoot>

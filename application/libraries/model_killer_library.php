@@ -16,6 +16,10 @@ class model_killer_library extends CI_Model{
 	
 	// tablodaki id sütünunun """sütun adının""" tutulduğu değişken
 	protected $name_of_id_column;
+
+	// parent table a ait id sütununun """sütun adının""" tutulduğu değişken
+	protected $name_of_parent_id_column;
+
 	
 	// tablodaki tüm sütun adlarının array olarak tutulduğu değişken
 	protected $table_colums;
@@ -59,6 +63,15 @@ class model_killer_library extends CI_Model{
 		return $this->name_of_id_column;
 	}
 
+	// parent table ın id sütununun """sütun adını""" set eder
+	public function setNameOfParentIdColumn($name_of_parent_id_column)
+	{
+		$this->name_of_parent_id_column = $name_of_parent_id_column;
+	}
+	public function getNameOfParentIdColumn()
+	{
+		return $this->name_of_parent_id_column;
+	}
 
 	/* tabloya yeni kayıt ekler. hangi tabloya kayıt ekleyeceğini class instance edilirkenki girilen parametrelerden bulur.çok zekidir.*/
 	public function insertNewRow($insert_data = array())
@@ -73,6 +86,7 @@ class model_killer_library extends CI_Model{
 		else
 			return FALSE;
 	}
+	
 	public function getLastRecordId()
 	{
 		return $this->last_record_id;
@@ -127,7 +141,39 @@ class model_killer_library extends CI_Model{
 		}
 	}
 
+	public function readRowByParent($cat_id = null)
+	{
+		if ($this->view_table_name!=null) 
+		{
 
+			if ($cat_id!=null) 
+			{
+				$query = $this->db->select('*')->from($this->view_table_name)->where($this->name_of_parent_id_column, $cat_id)->order_by($this->name_of_id_column,'desc')->get();
+
+				if($query->num_rows()>0)
+					return $query->result_array();
+				else
+					return null;
+			}
+			else
+				return null;
+		}
+		else
+		{
+			if ($cat_id!=null) 
+			{
+				$query = $this->db->select('*')->from($this->table_name)->where($this->name_of_parent_id_column, $cat_id)->order_by($this->name_of_id_column,'desc')->get();
+
+				if($query->num_rows()>0)
+					return $query->result_array();
+				else
+					return null;
+			}
+			else
+				return null;			
+		}
+
+	}	
 
 	/* tabloda update işlemi yapar. hangi tabloyu update edeceğini class instance edilirkenki girilen parametrelerden bulur. */
 	public function updateRow($record_id, $update_data)
@@ -139,7 +185,6 @@ class model_killer_library extends CI_Model{
 		else
 			return FALSE;	
 	}
-
 
 	/* tablodan kayıt siler. hangi tablodan kayıt sileceğini class instance edilirkenki girilen parametrelerden bulur. */
 	public function deleteRow($row_id, $name_of_id_column = NULL, $table_name = NULL)
@@ -177,7 +222,6 @@ class model_killer_library extends CI_Model{
 		else
 			return NULL;
 	}
-
 
 	/* bu metod, codeigniter ın bi bug ından ötürü zorunlu olarak eklenmiştir. tablonun ilişkili olduğu parent tabloyu okur.*/
 	public function readParentRow($record_id = NULL)
@@ -228,6 +272,6 @@ class model_killer_library extends CI_Model{
 			else
 				return NULL;			
 		}
-	}	
+	}
 
 }

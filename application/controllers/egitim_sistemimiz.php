@@ -42,12 +42,18 @@ class egitim_sistemimiz extends CI_Controller {
 		if ($this->edu_model->readRow($id) != null) 
 		{
 			$this->parser_data['edu_iteration'] = $this->edu_model->readRow($id);
+			
+			$this->load->model('edu_gal_model');
+			if ($this->edu_gal_model->readRowByParent($id)!=null)
+				$this->parser_data['edu_gal_iteration'] = $this->edu_gal_model->readRowByParent($id);
+			else
+				$this->parser_data['edu_gal_iteration'] = array();
 		}
 		else
 		{
 			$this->parser_data['edu_iteration'] = array();
+			$this->parser_data['edu_gal_iteration'] = array();
 		}
-
 	}
 
 }

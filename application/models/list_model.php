@@ -13,12 +13,14 @@ class list_model extends CI_Model {
         $this->model_killer_library->setTableName('list');
         $this->model_killer_library->setNameOfIdColumn('list_id');
         $this->model_killer_library->setViewTableName('list_view');
+        $this->model_killer_library->setNameOfParentIdColumn('cat_id');
         
     }
 
-	public function insertNewItemDetail($list_title, $list_detail, $list_title_eng, $list_detail_eng)
+	public function insertNewItemDetail($cat_id, $list_title, $list_detail, $list_title_eng, $list_detail_eng)
 	{
-		$insert_data = array(
+		$insert_data = array(	
+								'cat_id'			=> $cat_id,
 								'list_title' 		=> $list_title,
 								'list_detail' 		=> $list_detail,
 								'list_title_eng' 	=> $list_title_eng,
@@ -84,6 +86,10 @@ class list_model extends CI_Model {
 		$name_of_id_column = 'list_file_id';
 		$table_name = 'list_file';
 		return $this->model_killer_library->deleteRow($row_id, $name_of_id_column, $table_name);
-	}		
+	}
 
+	public function readRowByParent($cat_id)
+	{
+		return $this->model_killer_library->readRowByParent($cat_id);
+	}
 }
